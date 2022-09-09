@@ -12,7 +12,5 @@ namespace KundeApp.Models
         public string Postnr { get; set; }
         public string Poststed { get; set; }
 
-        public virtual List<Ordre> Ordrer { get; set; }
-
     }
 }
