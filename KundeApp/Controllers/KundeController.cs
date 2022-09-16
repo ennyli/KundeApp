@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KundeApp.DAL;
 using KundeApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,7 +32,7 @@ namespace KundeApp.Controllers
                 if (sjekkPostnr == null)
                 {
                     var poststedsRad = new Poststeder();
-                    poststedsRad.Postnr = innKunde.Poststed;
+                    poststedsRad.Postnr = innKunde.Postnr;
                     poststedsRad.Poststed = innKunde.Poststed;
                     nyKundeRad.Poststed = poststedsRad;
                 }

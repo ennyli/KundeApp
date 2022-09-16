@@ -9,7 +9,7 @@
         $("#etternavn").val(kunde.etternavn);
         $("#adresse").val(kunde.adresse);
         $("#postnr").val(kunde.postnr);
-        $("#poststed").val(kunde.postssted);
+        $("#poststed").val(kunde.poststed);
     });
 });
 
@@ -21,7 +21,7 @@ function endreKunde() {
         adresse: $("#adresse").val(),
         postnr: $("#postnr").val(),
         poststed: $("#poststed").val()
-    }
+    };
     $.post("Kunde/Endre", kunde, function (OK) {
         if (OK) {
             window.location.href = 'index.html';

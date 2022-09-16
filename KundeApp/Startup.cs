@@ -1,3 +1,4 @@
+using KundeApp.DAL;
 using KundeApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

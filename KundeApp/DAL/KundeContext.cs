@@ -24,7 +24,7 @@ namespace KundeApp.Models
         public string Poststed { get; set; }
 
         // denne listen ikke nødvendig med mindre man skal finne kundene på et gitt postnr (altså gå inn via Poststeder-collection)
-        // virtual public List<Kunder> Kunder { get; set; }
+        virtual public List<Kunder> Kunder { get; set; }
     }
 
     public class KundeContext : DbContext
