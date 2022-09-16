@@ -15,18 +15,21 @@ namespace KundeApp
 {
     public class Startup
     {
+        /**
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
+         */
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<KundeContext>(options => options.UseSqlite("Data source=Kunde.db"));
+            services.AddDbContext<KundeContext>(options => options.UseSqlite("Data Source=Kunde.db"));
+            services.AddScoped<IKundeRepository, KundeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
